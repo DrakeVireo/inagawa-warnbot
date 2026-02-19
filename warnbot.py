@@ -7,7 +7,7 @@ from discord import app_commands
 from discord.ext import tasks
 
 # ====== EINSTELLUNGEN ======
-TOKEN = "MTQ3MTc4ODM5NDkyNDM0MzM5Mg.GBgK4K.YKLD1qSRdfxPbF7rA8sTe6knTUifdZBkP04ick"
+TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 WARN_ROLE_NAME = "Warnliste"
 DEFAULT_DAYS = 3
 DB_FILE = "warnlist.db"
@@ -399,3 +399,4 @@ if __name__ == "__main__":
     if TOKEN == "HIER_DEIN_TOKEN" or not TOKEN:
         raise SystemExit("Bitte TOKEN setzen (DISCORD_BOT_TOKEN oder im Code eintragen).")
     client.run(TOKEN)
+
