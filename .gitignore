@@ -3,3 +3,8 @@ warnlist.db
 __pycache__/
 *.pyc
 .env
+.venv/
+warnlist.db
+__pycache__/
+*.pyc
+.env
